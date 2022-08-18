@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./header.ejs') %>
+    <title> page </title>
+</head>
+<body>
+    <%- include('./navbar.ejs') %>
+    <h1 class="text-center"> Ajouter un utilisateur </h1>
+    <div class="d-flex justify-content-center">
+        <form method="post" action="/addUser">
+            <div class="mb-3">
+                <label for="name" class="form-label">Prenom et Nom :</label>
+                <input type="text" class="form-control" placeholder="John Doe">
+            </div>
+            <div class="mb-3"> 
+                <label for="email" class="form-label">Email :</label>
+                <input type="email" class="form-control" placeholder="name@example.com">
+            </div>    
+                <label for="phone" class="form-label">Télephone :</label>
+                <input type="number" class="form-control" placeholder="--.--.--.--.--">
+            <div class="mb-3">    
+                <label for="address" class="form-label">Adresse postale :</label>
+                <input type="text" class="form-control" placeholder="BridgeRoad 17th London">
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+        </form>
+    </div>  
+</body>
+</html>
